@@ -36,7 +36,9 @@ void UndistortImages::loadParameters()
 	cout<<"Matrix"<<matrix<<std::endl;
 	cout<<"Coeff"<<coeff<<std::endl;
 	cout<<" load parameters success! "<<endl;
-}
+}/*I wonder if there is a better way to automatically write images and save as different file. 
+Now, after call OpenCV undistort function, I have saved undistorted images as “dst.png”, 
+and whenever the program generates a picture, I will manually modify the name.*/
 
 void UndistortImages::undistortImages()
 {
